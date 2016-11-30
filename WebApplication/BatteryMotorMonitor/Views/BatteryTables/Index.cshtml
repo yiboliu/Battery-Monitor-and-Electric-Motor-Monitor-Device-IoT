@@ -1,0 +1,52 @@
+﻿@model IEnumerable<BatteryMotorMonitor.Models.BatteryTable>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Generate Data Reports", "refreshDataAnalytics")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BatteryTemperature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BatteryCurrent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BatteryVoltage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BatteryPower)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BatteryTemperature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BatteryCurrent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BatteryVoltage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BatteryPower)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DateStamp }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DateStamp }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DateStamp })
+        </td>
+    </tr>
+}
+
+</table>

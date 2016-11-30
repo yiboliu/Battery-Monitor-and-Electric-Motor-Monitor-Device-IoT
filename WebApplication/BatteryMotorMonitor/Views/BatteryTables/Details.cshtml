@@ -1,0 +1,51 @@
+﻿@model BatteryMotorMonitor.Models.BatteryTable
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BatteryTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BatteryTemperature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatteryTemperature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatteryCurrent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatteryCurrent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatteryVoltage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatteryVoltage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatteryPower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatteryPower)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DateStamp }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

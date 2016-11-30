@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IoTBatteryDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BatteryTable">
+    <Key>
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="DateStamp" Type="date" Nullable="false" />
+    <Property Name="BatteryTemperature" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BatteryCurrent" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BatteryVoltage" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BatteryPower" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="IoTBatteryDatabaseModelStoreContainer">
+    <EntitySet Name="BatteryTable" EntityType="Self.BatteryTable" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
