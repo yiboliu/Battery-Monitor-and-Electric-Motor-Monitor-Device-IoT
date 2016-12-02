@@ -5,10 +5,10 @@
       <PropertyRef Name="DateStamp" />
     </Key>
     <Property Name="DateStamp" Type="date" Nullable="false" />
-    <Property Name="BatteryTemperature" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="BatteryCurrent" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="BatteryVoltage" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="BatteryPower" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BatteryTemperature" Type="int" Nullable="false" />
+    <Property Name="BatteryCurrent" Type="float" Nullable="false" />
+    <Property Name="BatteryVoltage" Type="float" Nullable="false" />
+    <Property Name="BatteryPower" Type="float" Nullable="false" />
   </EntityType>
   <EntityContainer Name="IoTBatteryDatabaseModelStoreContainer">
     <EntitySet Name="BatteryTable" EntityType="Self.BatteryTable" Schema="dbo" store:Type="Tables" />

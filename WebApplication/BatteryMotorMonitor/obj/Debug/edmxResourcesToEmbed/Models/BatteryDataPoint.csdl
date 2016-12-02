@@ -5,12 +5,12 @@
       <PropertyRef Name="DateStamp" />
     </Key>
     <Property Name="DateStamp" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="BatteryTemperature" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="BatteryCurrent" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="BatteryVoltage" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="BatteryPower" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BatteryTemperature" Type="Decimal" Nullable="false" />
+    <Property Name="BatteryCurrent" Type="Decimal" Nullable="false" />
+    <Property Name="BatteryVoltage" Type="Decimal" Nullable="false" />
+    <Property Name="BatteryPower" Type="Decimal" Nullable="false" />
   </EntityType>
   <EntityContainer Name="IoTBatteryDataEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="BatteryTables" EntityType="Self.BatteryTable" />
+    <EntitySet Name="BatteryTables" EntityType="IoTBatteryDatabaseModel.BatteryTable" />
   </EntityContainer>
 </Schema>

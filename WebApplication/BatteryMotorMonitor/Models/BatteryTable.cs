@@ -15,9 +15,9 @@ namespace BatteryMotorMonitor.Models
     public partial class BatteryTable
     {
         public System.DateTime DateStamp { get; set; }
-        public decimal BatteryTemperature { get; set; }
-        public decimal BatteryCurrent { get; set; }
-        public decimal BatteryVoltage { get; set; }
-        public decimal BatteryPower { get; set; }
+        public double BatteryTemperature { get; set; }
+        public double BatteryCurrent { get; set; }
+        public double BatteryVoltage { get; set; }
+        public double BatteryPower { get; set; }
     }
 }

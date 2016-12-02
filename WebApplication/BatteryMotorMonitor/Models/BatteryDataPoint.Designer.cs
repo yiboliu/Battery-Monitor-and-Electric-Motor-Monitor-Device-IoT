@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\RunFranks525\Documents\Workspace\BatteryMotorMonitor\Battery-Monitor-and-Electric-Motor-Monitor-Device-IoT\WebApplication\BatteryMotorMonitor\Models\BatteryDataPoint.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\RunFranks525\Documents\Workspace\BatteryMotorMonitor\BatteryMonitorRepo\WebApplication\BatteryMotorMonitor\Models\BatteryDataPoint.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
